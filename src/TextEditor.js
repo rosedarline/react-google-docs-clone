@@ -1,4 +1,4 @@
-import React, { useCallback, useRef } from "react";
+import React, { useCallback } from "react";
 import Quill from "quill";
 import "quill/dist/quill.snow.css";
 
@@ -16,5 +16,5 @@ export default function TextEditor() {
 
     }, [])
 
-    return <div id="container" ref={wrapperRef}></div>
+    return <div className="container" ref={wrapperRef}></div>
 }
